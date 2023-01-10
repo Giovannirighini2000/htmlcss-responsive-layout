@@ -187,5 +187,8 @@ header{
     .col-3{
         flex-basis: 100%;
     }
+    .phone-card{
+        padding-right: 0px;
+    }
     
 }
