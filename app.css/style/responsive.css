@@ -61,7 +61,7 @@ header{
     align-items: center;
 }
 .button-white{
-    padding: 2px 10px;
+    padding: 0px 10px;
     background: white;
     color: black;
     border-radius: 15px;
@@ -69,9 +69,9 @@ header{
 }
 .bar{
     display: none;
-    background-color: var(--blue);
-    
+    background-color: var(--blue);   
     border: none;
+    font-size: 20px;
 }
 .white{
     color: white;
@@ -87,13 +87,13 @@ header{
     background-color: var(--blue);
     border: none;
     border-radius: 15px;
-    padding: 10px 50px;
+    padding: 10px 80px;
     font-size: 16px;
 }
 .contanier-hero{
     margin: 0 auto;
     max-width: 1140px;
-    margin-top: 50px;a
+    margin-top: 50px;
 }
 .col-2,
 .col-3{
@@ -141,7 +141,56 @@ header{
 .line-height-p{
     line-height: 30px;
 }
-
+/* SECTION STRATETIC PLANET */
+.Strategic-planning{
+    background-color: var(--purple);
+    margin-top: 105px;
+}
+.container-strategic{
+    margin: 0 auto;
+    max-width: 874px;
+    gap: 70px;
+}
+.planning{
+    flex-basis: calc(100% /2 - 35px);
+    margin-top: 135px;
+    color: white;
+}
+.card-developement{
+    flex-basis: calc(100% /2 - 35px);
+    margin-top: 310px;
+    margin-bottom:60px;
+    
+}
+.card-dev{
+    background-color: white;
+    border-radius: 40px;
+    text-align: center;
+    padding-bottom: 30px ;
+}
+.appimg{
+    padding: 35px 95px 30px 95px;
+}
+.p-dev{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    font-style:italic ;
+}
+.button-arrow{
+    background-color: var(--purple);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 13px;
+}
+.title-planning{
+    font-size: 28px;
+    padding-top: 120px;
+    padding-bottom: 60px ;
+}
+.title-dev{
+    padding-bottom: 25px;
+}
 /* ****RESPONSIVE DESK,TABLET E MOBILE**** */
 
 /* *****RESPONSIVE HEDEAR TABLET,MOBILE**** */
@@ -159,7 +208,7 @@ header{
     }
 
 }
-/* TABLET */
+/* TABLET MAIN-hero*/
 @media screen and (max-width: 810px){
     .colcard .card {
         flex-wrap: wrap;
@@ -174,7 +223,7 @@ header{
     }
 }
 
-/* MOBILE */
+/* MOBILE MAIN-hero*/
 @media screen and (max-width: 375px){
     .colcard .card {
         flex-wrap: wrap;
@@ -190,5 +239,42 @@ header{
     .phone-card{
         padding-right: 0px;
     }
+    .contanier-hero{
+        padding: 20px;
+    }
+    .line-height-p{
+        font-size: 12px;
+    }
+    .title-card{
+        font-size: 18px;
+    }
+}
+/*STRATEGIC PLANNING  */
+/* TABLET */
+@media screen and (max-width: 810px){
+    .planning{
+        flex-basis: 100%;
+    }
+    .card-devolopement{
+        flex-basis: 100%;
+        
+    }
+    .card-developement{
+        margin-top: 10px;
+    }
+    .Strategic-planning .row{
+        display: block;
+        padding:20px;
+    }
+
     
+}
+/* MOBILE */
+@media screen and (max-width: 375px){
+    .p-planning{
+        font-size: 12px;
+    }
+    .p-dev{
+        font-size: 12px;
+    }
 }
