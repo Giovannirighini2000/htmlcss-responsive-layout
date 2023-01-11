@@ -243,7 +243,7 @@ header{
         flex-basis: 100%;     
         
         
-    }
+     }
     .phone-card img{
         margin:0 auto;
         padding-bottom: 0px;
@@ -256,6 +256,15 @@ header{
     }
     .line-height-p{
         font-size: 12px;
+    }
+    .content-center{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .store-button {
+        
+        padding: 10px 50px;
+        
     }
 }
 
@@ -358,6 +367,17 @@ header{
 .partners{
     padding-bottom: 105px;
 }
+/* media quert tablet */
+@media screen and (max-width:991px) {
+    .testimonil-margin{
+        font-size:14px;
+        
+    }
+    .testimonials{
+        padding: 20px;
+    }
+    
+}
 /* MEDIA QUERY MOBILE */
 @media screen and (max-width: 575px){
     .card-testimonial{
@@ -385,6 +405,7 @@ header{
 .containter-card-work{
     max-width: 1140px;
     margin: 0 auto;
+    padding-bottom: 60px;
 }
 .title-benefits{
     color: white;
@@ -393,14 +414,63 @@ header{
     padding-top: 75px;
     padding-bottom: 75px;
 }
-.contanier-card{
-    flex-basis: calc(100% /3);
+.container-card{
+    flex-basis: calc( 100% * (1 / 3) - 60px / 3 );
+    
    
     
 }
 .work-card{
     background-color: white;
+    border-radius: 20px;
+    padding: 55px 40px 30px 30px;
 }
 .number{
+    font-size: 50px;
+    color:var(--purple);
+    margin-bottom: 30px;
 
+}
+.gap-gutter{
+    gap:30px;
+    
+    
+}
+.para-work{
+    color: var(--purple);
+    font-size: 18px;
+    
+    
+}
+.para-text-work{
+    color: #333333a3;
+    margin-top: 30px;
+}
+.purple-button{
+    background-color: var(--purple);
+    border: none;
+    border-radius: 15px;
+    padding: 8px 35px;
+    font-size: 14px;
+    color:white; 
+    margin-top: 30px;
+}
+.containter-card-work{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+/* MEDIA QUERY SECTION WORKING TABLET */
+@media screen and (max-width:991px){
+    .container-card{
+        flex-basis: calc(100% * (1/2) - 30px /2);
+    }
+    
+}
+
+/* MEDIA QUERY SECTION WORKING MOBILE */
+@media screen and (max-width:575px){
+    .container-card{
+        flex-basis: calc(100% * (1/1) /1);
+    }
+    
 }
