@@ -223,7 +223,7 @@ header{
     }
 }
 /* *****RESPONSIVE HEDEAR TABLET,MOBILE**** */
-@media screen and (max-width: 810px){
+@media screen and (max-width: 991px){
     .bar{
         display: block;
     }
@@ -231,14 +231,14 @@ header{
         display: none;
     }
 }
-@media screen and (max-width: 375px){
+@media screen and (max-width: 575px){
     .hero[class^="col-"] {
         width: 100%;
     }
 
 }
 /* TABLET MAIN-hero*/
-@media screen and (max-width: 810px){
+@media screen and (max-width: 991px){
      .card .col-5 {
         flex-basis: 100%;     
         
@@ -251,11 +251,16 @@ header{
     .col-2 .row .phone-card{
         margin: 0;
     }
-    
+    .title-card{
+        font-size: 14px;
+    }
+    .line-height-p{
+        font-size: 12px;
+    }
 }
 
 /* MOBILE MAIN-hero*/
-@media screen and (max-width: 375px){
+@media screen and (max-width: 575px){
     .colcard .card {
        margin:0 auto;
     }
@@ -280,7 +285,7 @@ header{
 }
 /*STRATEGIC PLANNING  */
 /* TABLET */
-@media screen and (max-width: 810px){
+@media screen and (max-width: 991px){
     .planning{
         flex-basis: 100%;
     }
@@ -299,7 +304,7 @@ header{
     
 }
 /* MOBILE */
-@media screen and (max-width: 375px){
+@media screen and (max-width: 575px){
     .p-planning{
         font-size: 12px;
     }
@@ -335,7 +340,7 @@ header{
     color: var(--purple);
     padding-top: 40px;
     padding-bottom: 50px;
-    font-size: 28px;
+    font-size: 32px;
 }
 .card-testimonial{
     background-color: var(--purple);
@@ -350,8 +355,11 @@ header{
 .container-testimonial{
     padding-top:30px ;
 }
+.partners{
+    padding-bottom: 105px;
+}
 /* MEDIA QUERY MOBILE */
-@media screen and (max-width: 375px){
+@media screen and (max-width: 575px){
     .card-testimonial{
         flex-wrap:wrap;
         text-align: center;
@@ -370,5 +378,29 @@ header{
     
 
 }
+    /*  BENITS WORKING*/
+.benifit-work{
+    background-color: var(--purple);
+}
+.containter-card-work{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.title-benefits{
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+.contanier-card{
+    flex-basis: calc(100% /3);
+   
     
+}
+.work-card{
+    background-color: white;
+}
+.number{
 
+}
