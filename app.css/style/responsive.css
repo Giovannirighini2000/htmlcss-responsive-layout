@@ -78,10 +78,10 @@ header{
 }
 /* *******HERO - MAIN******* */
 .col-3{
-    flex-basis: calc(100%/3 - 12px);
+    flex-basis: calc(100% / 3);
 }
 .col-2{
-    flex-basis: calc(100%*2/3 - 12px);
+    flex-basis: calc(100% *2 / 3 );
 }
 .store-button{
     background-color: var(--blue);
@@ -95,12 +95,12 @@ header{
     max-width: 1140px;
     margin-top: 50px;
 }
-.col-2,
-.col-3{
+.card{
     background-color: var(--lightblue);
-    border-radius: 15px;
-    
-    
+    border-radius: 15px;  
+}
+.card .row{
+    height: 100%;
 }
 .card .col-5{
     flex-basis:50% ;
@@ -122,10 +122,14 @@ header{
     
 }
 .colcard{
-    gap: 12px;
-    display: flex;
+    row-gap: 12px;
+    margin: 0 -12px;
       
 }
+.row.gutter > [class^='col'] {
+    padding: 0 12px;
+}
+
 .title-card{
     color: var(--blue);
     padding-bottom: 40px;
@@ -133,9 +137,10 @@ header{
 }
 .phone-card img{
     
-    display: block;
-    max-width: 240px;
+    display: block;   
     margin: 0 auto;
+    max-width: 240px;
+    
 
 }
 .col-2 .row .phone-card{
@@ -234,13 +239,13 @@ header{
 }
 /* TABLET MAIN-hero*/
 @media screen and (max-width: 810px){
-    .container-hero .colcard .card .col-5 {
+     .card .col-5 {
         flex-basis: 100%;     
         
         
     }
     .phone-card img{
-        margin:0;
+        margin:0 auto;
         padding-bottom: 0px;
     }
     .col-2 .row .phone-card{
@@ -302,3 +307,15 @@ header{
         font-size: 12px;
     }
 }
+/* SECTION PARTNERS */
+.container-expert-parteners{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.testimonials{
+    text-align: center;
+}
+.purple-parteners{
+    color: var(--purple);
+}
+.
