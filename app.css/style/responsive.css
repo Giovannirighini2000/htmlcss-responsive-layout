@@ -574,3 +574,27 @@ header{
     }
     
 }
+/* CONTAINER-START-MAIN-FREE */
+.purple-start{
+    background-color: var(--purple);
+}
+.container-start-main{
+    max-width: 560px;
+    margin: 0 auto;
+    border: 1px solid black;
+    height: 500px;
+}
+
+
+
+
+/* CONTAINER FOOTER */
+.black-footer{
+    background-color: var(--dark);
+}
+.container-footer{
+    max-width: 408px;
+    margin: 0 auto;
+    border: 1px solid black;
+    height: 200px;
+}
