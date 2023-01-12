@@ -398,7 +398,7 @@ header{
     
 
 }
-    /*  BENITS WORKING*/
+    /*  BENIFITS WORKING*/
 .benifit-work{
     background-color: var(--purple);
 }
@@ -438,9 +438,10 @@ header{
 }
 .para-work{
     color: var(--purple);
-    font-size: 18px;
-    
-    
+    font-size: 18px;   
+}
+.numer-margin{
+    margin-bottom: 35px;
 }
 .para-text-work{
     color: #333333a3;
@@ -471,6 +472,105 @@ header{
 @media screen and (max-width:575px){
     .container-card{
         flex-basis: calc(100% * (1/1) /1);
+    }
+    
+}
+/* ******SECTION ABOUT US *****  */
+.container-card-about{
+    max-width: 1050px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-right: 50px;
+    padding-left: 50px;
+    gap: 100px;
+}
+.text-container-about{
+    flex-basis: calc(100% * (9/12) - 100px /1);
+    
+}
+.img-container-about{
+    flex-basis: calc(100% * (3/12)  /1);
+    
+}
+.p-about{
+    margin-bottom: 80px;
+    line-height: 30px;
+}
+.p-about2{
+    line-height: 30px;
+    padding-bottom: 150px;
+}
+.about-purple{
+    color: var(--purple);
+    font-size: 45px;
+    margin-bottom: 60px;
+}
+.purple-button-img{
+    background-color: var(--purple);
+    border: none;
+    border-radius: 15px;
+    padding: 5px 35px;
+    font-size: 12px;
+    color:white; 
+    margin-top: 30px;
+}
+.img-relative{
+  position: relative;   
+    
+}
+.img-about{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;  
+       
+}
+.purple-text-img{
+    color:var(--purple);
+    font-size: 20px;
+    line-height: 32px;
+    margin-right: 35px;
+    font-weight: bold;
+    
+}
+.icon-img{
+    position: absolute;
+    top: -22px;
+    left: 150px;
+    font-size: 80px;
+    color:var(--purple)
+}
+/* MEDIA QUERY ABOUT US  */
+@media screen and (max-width:991px) {
+    
+    
+}
+
+@media  screen and (max-width:915px) {
+    .container-card-about{
+        gap: 50px;
+    }
+    
+}
+@media  screen and (max-width:720px) {
+    .container-card-about{
+        gap: 15px;
+    }
+    
+}
+
+@media  screen and (max-width:575px) {
+    .img-container-about{
+        flex-basis: 100%;
+    }
+    .text-container-about{
+        flex-basis: 100%;
+    }
+    .p-about2{
+        padding-bottom: 80px;
+    }
+    .img-relative{
+        padding-bottom: 80px;
     }
     
 }
